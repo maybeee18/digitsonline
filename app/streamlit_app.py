@@ -78,4 +78,4 @@ if (canvas_result.image_data is not None):
 
     st.altair_chart(chart, use_container_width=True)
     
-footer.footer()
+#footer.footer() todo - bug found "cannot import name ‘div’" on heroku
