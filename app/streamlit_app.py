@@ -10,7 +10,7 @@ from keras.utils import plot_model
 from PIL import Image
 from streamlit_drawable_canvas import st_canvas
 
-import footer
+#import footer
 
 model_list = os.listdir("mlmodels")
 
