@@ -1,7 +1,0 @@
-streamlit>0.66
-pandas>1.0
-numpy
-mlflow
-altair
-keras
-

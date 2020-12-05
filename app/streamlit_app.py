@@ -1,23 +1,22 @@
-import streamlit as st
-import pandas as pd
-import numpy as np
-from PIL import Image
-import streamlit as st
-from streamlit_drawable_canvas import st_canvas
-import altair as alt 
-import time 
-import keras
-from keras.utils import plot_model
 import os
+import time
 
-model_list = os.listdir("../mlmodels")
+import altair as alt
+import keras
+import numpy as np
+import pandas as pd
+import streamlit as st
+from keras.utils import plot_model
+from PIL import Image
+from streamlit_drawable_canvas import st_canvas
+
+model_list = os.listdir("mlmodels")
 
 model_path = st.sidebar.selectbox(
     "Select ML model:", tuple(model_list)
 )
 
-model = keras.models.load_model("../mlmodels/" + model_path)
-
+model = keras.models.load_model(os.path.join("mlmodels", model_path))
 
 st.title("MNIST DNN runner")
 
