@@ -1,6 +1,8 @@
 # digitsonline
 Web-app to interact with ML for MNIST (written digits recognition)
 
+https://digitsonline.herokuapp.com/
+
 ![](img/demo.gif)
 
 # References
