@@ -10,7 +10,7 @@ from keras.utils import plot_model
 from PIL import Image
 from streamlit_drawable_canvas import st_canvas
 
-#import footer
+import footer
 
 model_list = os.listdir("mlmodels")
 
@@ -78,4 +78,4 @@ if (canvas_result.image_data is not None):
 
     st.altair_chart(chart, use_container_width=True)
     
-#footer.footer() todo - bug found "cannot import name ‘div’" on heroku
+footer.footer()
