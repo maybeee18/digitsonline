@@ -71,7 +71,7 @@ def layout(*args):
 
 def footer():
     myargs = [
-        "&nbsp&nbsp Made in ",
+        "&nbsp&nbsp Coded in ",
         link("https://www.streamlit.io/", image('https://avatars3.githubusercontent.com/u/45109972?s=400&v=4',
               width=px(25), height=px(25))),
         " by ",
